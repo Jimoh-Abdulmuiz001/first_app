@@ -59,22 +59,24 @@ class MyHomePage extends StatelessWidget{
   Widget build(BuildContext context) {
     
     
-    return Container(
-      color: Colors.yellow,
-      child: Column(
-        
-        children: [
+    return Center(
+    
+     
+        child: Column(
           
-        const   Text("My first App"),
-        ElevatedButton(onPressed: (){Navigator.pushNamed(context, "/first_screen");}, child: Text("Next")),
-        ElevatedButton(onPressed: (){Navigator.pushNamed(context, "/second_screen");}, child: Text("Qr code")),
-        ElevatedButton(onPressed: (){Navigator.pushNamed(context, "/textscreens");}, child: Text("login page")),
-          ElevatedButton(onPressed: (){Navigator.pushNamed(context, "/form");}, child: Text("login page")),
+          children: [
+            
+          const   Text("My first App"),
+          ElevatedButton(onPressed: (){Navigator.pushNamed(context, "/first_screen");}, child: Text("Next")),
+          ElevatedButton(onPressed: (){Navigator.pushNamed(context, "/second_screen");}, child: Text("Qr code")),
+          ElevatedButton(onPressed: (){Navigator.pushNamed(context, "/textscreens");}, child: Text("login page")),
+            ElevatedButton(onPressed: (){Navigator.pushNamed(context, "/form");}, child: Text("login page")),
+        
+          
+          
+          ]
+        ),
       
-        
-        
-        ]
-      ),
       
     );
   }
